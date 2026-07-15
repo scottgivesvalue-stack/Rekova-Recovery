@@ -1,153 +1,17 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="utf-8" />
-  <meta name="viewport" content="width=device-width,initial-scale=1" />
-  <title>Rekova Recovery — Website</title>
-  <meta name="description" content="Explore the Rekova Recovery app, guide, and QR resources from one website page." />
-  <style>
-    :root{--bg:#0b0b0b;--card:#111;--muted:#9a9a9a;--accent:#ea0202;--text:#fff;--line:rgba(255,255,255,0.08)}
-    *{box-sizing:border-box}
-    html,body{height:100%;margin:0;font-family:Inter, system-ui, -apple-system, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;background:linear-gradient(180deg,#000,#080808);color:var(--text)}
-    .wrap{min-height:100%;padding:28px}
-    .page{max-width:1180px;margin:0 auto;background:var(--card);border:1px solid var(--line);border-radius:18px;overflow:hidden;box-shadow:0 24px 60px rgba(0,0,0,0.45)}
-    .tabs{display:flex;flex-wrap:wrap;gap:10px;padding:18px 20px;border-bottom:1px solid var(--line)}
-    .tab{background:transparent;border:1px solid var(--line);color:var(--text);padding:10px 14px;border-radius:999px;cursor:pointer;font-weight:700}
-    .tab.active{background:var(--accent);border-color:var(--accent)}
-    .panel{display:none;padding:24px 24px 30px}
-    .panel.active{display:block}
-    .hero{display:grid;gap:16px;grid-template-columns:1.2fr .8fr;align-items:start}
-    h1,h2{margin:0 0 8px}
-    p.lead{margin:0;color:var(--muted);line-height:1.6}
-    .actions{display:flex;flex-wrap:wrap;gap:12px;margin-top:16px}
-    .btn{display:inline-flex;align-items:center;justify-content:center;padding:12px 16px;border-radius:10px;background:var(--accent);color:#fff;border:0;cursor:pointer;font-weight:700;text-decoration:none}
-    .btn.secondary{background:transparent;border:1px solid var(--line)}
-    .card{background:#0b0b0b;border:1px solid var(--line);border-radius:14px;padding:18px}
-    .grid{display:grid;gap:16px;grid-template-columns:1fr 1fr}
-    .app-frame{width:100%;min-height:760px;border:0;border-radius:14px;background:#fff}
-    .list{margin:10px 0 0 18px;color:var(--muted);line-height:1.7}
-    .qr-box{display:flex;flex-direction:column;align-items:center;gap:12px;background:#fff;border-radius:12px;padding:18px}
-    .qr-box img{width:260px;height:260px;object-fit:contain;background:#fff;border-radius:8px}
-    .note{color:#333;font-size:0.95rem;text-align:center}
-    footer{margin-top:18px;color:var(--muted);font-size:0.9rem}
-    @media (max-width:840px){.hero,.grid{grid-template-columns:1fr}.app-frame{min-height:620px}}
-  </style>
-</head>
-<body>
-  <div class="wrap">
-    <div class="page">
-      <div class="tabs" role="tablist" aria-label="Rekova site sections">
-        <button class="tab active" data-target="overview" role="tab" aria-selected="true">Overview</button>
-        <button class="tab" data-target="app" role="tab" aria-selected="false">Rekova Academy</button>
-        <button class="tab" data-target="guide" role="tab" aria-selected="false">App Guide</button>
-        <button class="tab" data-target="qr" role="tab" aria-selected="false">QR</button>
-      </div>
-
-      <div class="panel active" id="overview">
-        <div class="hero">
-          <div>
-            <h1>Rekova Recovery is now live on your website</h1>
-            <p class="lead">Visitors can explore the recovery experience from a dedicated tab on your site, open the app directly, or use the guide and QR resources for kiosks and staff stations.</p>
-            <div class="actions">
-              <a class="btn" href="/academy/">Open Rekova Academy</a>
-              <a class="btn secondary" href="/appguide/">Open the app guide</a>
-            </div>
-          </div>
-          <div class="card">
-            <h2>What’s included</h2>
-            <ul class="list">
-              <li>Mobile-style recovery app</li>
-              <li>Guided tutorials and equipment info</li>
-              <li>QR access for phones and kiosks</li>
-            </ul>
-          </div>
-        </div>
-      </div>
-
-      <div class="panel" id="app">
-        <div class="card">
-          <h2>Rekova Academy</h2>
-          <p class="lead">This tab links to the dedicated Rekova Academy page where visitors can access the recovery experience.</p>
-          <div class="actions">
-            <a class="btn" href="/academy/" target="_blank" rel="noopener">Open Rekova Academy page</a>
-          </div>
-        </div>
-        <div class="app-frame" style="background:#0d0d0d;min-height:480px;border-radius:14px;display:flex;align-items:center;justify-content:center;color:var(--muted);font-size:1rem;">
-          The Rekova Academy tab now links to a standalone page.
-        </div>
-      </div>
-
-      <div class="panel" id="guide">
-        <div class="grid">
-          <div class="card">
-            <h2>App guide</h2>
-            <p class="lead">Use the guide page for a scanner-friendly overview of the experience and links to open the app.</p>
-            <div class="actions">
-              <a class="btn" href="/appguide/">Go to app guide</a>
-            </div>
-          </div>
-          <div class="card">
-            <h2>Best for</h2>
-            <ul class="list">
-              <li>Staff training stations</li>
-              <li>Equipment demonstrations</li>
-              <li>Visitor-facing kiosks</li>
-            </ul>
-          </div>
-        </div>
-      </div>
-
-      <div class="panel" id="qr">
-        <div class="grid">
-          <div class="card">
-            <h2>QR access</h2>
-            <p class="lead">Use the QR page to print or share a direct opening link for mobile visitors.</p>
-            <div class="actions">
-              <a class="btn" href="/qr/">Open QR page</a>
-            </div>
-          </div>
-          <div class="qr-box">
-            <img id="qrImage" alt="QR to open Rekova" src="" />
-            <div class="note">Scan with your phone camera to open the app.</div>
-          </div>
-        </div>
-      </div>
-    </div>
-  </div>
-
-  <script>
-    (function(){
-      const tabs = Array.from(document.querySelectorAll('.tab'));
-      const panels = Array.from(document.querySelectorAll('.panel'));
-
-      tabs.forEach((tab) => {
-        tab.addEventListener('click', () => {
-          const target = tab.getAttribute('data-target');
-          tabs.forEach((item) => {
-            const isActive = item === tab;
-            item.classList.toggle('active', isActive);
-            item.setAttribute('aria-selected', isActive ? 'true' : 'false');
-          });
-
-          panels.forEach((panel) => {
-            panel.classList.toggle('active', panel.id === target);
-          });
-        });
-      });
-
-      const qrImage = document.getElementById('qrImage');
-      const appUrl = window.location.origin + '/app/';
-      const qrSrc = 'https://api.qrserver.com/v1/create-qr-code/?size=400x400&data=' + encodeURIComponent(appUrl);
-      if (qrImage) {
-        qrImage.src = qrSrc;
-        qrImage.onerror = function(){
-          qrImage.style.background = '#fff';
-          qrImage.style.width = '220px';
-          qrImage.style.height = '220px';
-          qrImage.alt = 'QR unavailable — open the app using the button.';
-        };
-      }
-    })();
-  </script>
-</body>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Rekova Recovery Academy</title>
+    <meta
+      name="description"
+      content="Learn how to use every piece of the Rekova Recovery kit with video, audio, and text guides."
+    />
+    <link rel="icon" href="/favicon.svg" />
+  </head>
+  <body>
+    <div id="root"></div>
+    <script type="module" src="/src/main.tsx"></script>
+  </body>
 </html>
