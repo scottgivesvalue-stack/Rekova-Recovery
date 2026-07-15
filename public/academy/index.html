@@ -1,0 +1,46 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Rekova Academy</title>
+  <meta name="description" content="Rekova Academy learning hub for recovery tutorials and app access." />
+  <style>
+    :root{--bg:#0b0b0b;--card:#111;--muted:#9a9a9a;--accent:#ea0202;--text:#fff;--line:rgba(255,255,255,0.08)}
+    *{box-sizing:border-box}
+    html,body{margin:0;height:100%;font-family:Inter,system-ui,-apple-system,Segoe UI,Roboto,Helvetica,Arial,sans-serif;background:linear-gradient(180deg,#000,#080808);color:var(--text)}
+    .page{min-height:100%;padding:28px;max-width:1080px;margin:0 auto}
+    .hero{background:var(--card);border:1px solid var(--line);border-radius:20px;padding:32px;box-shadow:0 20px 60px rgba(0,0,0,.45)}
+    h1{margin:0 0 14px;font-size:2.2rem}
+    p{margin:0 0 18px;color:var(--muted);line-height:1.7}
+    .actions{display:flex;flex-wrap:wrap;gap:12px}
+    .btn{display:inline-flex;align-items:center;justify-content:center;padding:14px 20px;border-radius:12px;border:0;font-weight:700;text-decoration:none;background:var(--accent);color:#fff}
+    .btn.secondary{background:transparent;border:1px solid var(--line)}
+    .nav{display:flex;flex-wrap:wrap;gap:10px;margin-bottom:22px}
+    .nav a{color:var(--text);text-decoration:none;padding:10px 16px;border-radius:999px;border:1px solid var(--line);background:rgba(255,255,255,0.02)}
+    .nav a.active{background:var(--accent);border-color:var(--accent)}
+    .note{margin-top:28px;color:var(--muted);font-size:0.95rem;line-height:1.6}
+    @media(max-width:700px){.hero{padding:22px}.actions{flex-direction:column;align-items:stretch}}    
+  </style>
+</head>
+<body>
+  <div class="page">
+    <div class="nav">
+      <a href="/" class="active">Home</a>
+      <a href="/academy/">Rekova Academy</a>
+      <a href="/appguide/">App Guide</a>
+      <a href="/qr/">QR</a>
+    </div>
+
+    <div class="hero">
+      <h1>Rekova Academy</h1>
+      <p>Welcome to the Rekova Academy page. This is the destination for the academy experience, with direct access to the recovery app, guide, and QR resources.</p>
+      <div class="actions">
+        <a class="btn" href="/app/">Open the Academy app</a>
+        <a class="btn secondary" href="/appguide/">Open the app guide</a>
+      </div>
+      <p class="note">Use this page as the dedicated Rekova Academy tab on your website. It can serve as the direct landing destination for visitors seeking the training and recovery experience.</p>
+    </div>
+  </div>
+</body>
+</html>
