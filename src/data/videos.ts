@@ -27,7 +27,7 @@ export const tutorialVideos: TutorialVideo[] = [
     title: 'Depuffing Wand Guide',
     description: 'Discover how to use the Depuffing Wand for facial recovery and depuffing therapy.',
     url: 'https://drive.google.com/file/d/1xHlVgRRlfebIGEkK5WkU2p3Tk8ptP9Kw/view?usp=share_link',
-    thumbnail: 'https://www.rekovarecovery.com/depuffing-wand.jpg',
+    thumbnail: 'https://www.therabody.com/cdn/shop/files/Wand-PDP-Hero-5-New.webp?v=1772817596',
   },
   {
     id: 'jetboots-prime',

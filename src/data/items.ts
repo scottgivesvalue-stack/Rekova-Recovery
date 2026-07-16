@@ -102,7 +102,7 @@ export const recoveryItems: RecoveryItem[] = [
       'Supports facial circulation',
       'Refreshes tired skin after travel',
     ],
-    imageUrl: 'https://www.rekovarecovery.com/depuffing-wand-kit.jpg',
+    imageUrl: 'https://www.therabody.com/cdn/shop/files/Wand-PDP-Hero-5-New.webp?v=1772817596',
     videoUrl: 'https://drive.google.com/file/d/1xHlVgRRlfebIGEkK5WkU2p3Tk8ptP9Kw/view?usp=share_link',
   },
   {
