@@ -24,9 +24,21 @@ jobs:
       - name: Build
         run: npm run build
 
+      - name: Fetch legacy website repo
+        run: |
+          git clone --depth 1 https://github.com/scottgivesvalue-stack/Rekovarecovery.git legacy-site
+
+      - name: Assemble combined site
+        run: |
+          rm -rf combined
+          mkdir -p combined/app
+          rsync -a --exclude '.git' --exclude '.github' legacy-site/ combined/
+          rsync -a dist/ combined/app/
+          cp public/CNAME combined/CNAME
+
       - name: Deploy to gh-pages
         uses: peaceiris/actions-gh-pages@v3
         with:
           github_token: ${{ secrets.GITHUB_TOKEN }}
-          publish_dir: ./dist
+          publish_dir: ./combined
           publish_branch: gh-pages
