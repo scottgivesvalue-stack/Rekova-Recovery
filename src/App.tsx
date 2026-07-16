@@ -150,7 +150,15 @@ function App() {
                 return (
                   <div key={video.id} className="mobile-card">
                     {matched?.imageUrl && (
-                      <img src={matched.imageUrl} alt={video.title} className="guide-equipment-image" />
+                      <img
+                        src={matched.imageUrl}
+                        alt={video.title}
+                        className="guide-equipment-image"
+                        onError={(e) => {
+                          e.currentTarget.onerror = null;
+                          e.currentTarget.src = `${assetBase}rekova-logo.png`;
+                        }}
+                      />
                     )}
                     <h2>{video.title}</h2>
                     <p>{video.description}</p>
@@ -354,7 +362,15 @@ function App() {
           </div>
           <div className="equipment-details">
             {selectedItem.imageUrl && (
-              <img src={selectedItem.imageUrl} alt={selectedItem.name} className="equipment-image" />
+              <img
+                src={selectedItem.imageUrl}
+                alt={selectedItem.name}
+                className="equipment-image"
+                onError={(e) => {
+                  e.currentTarget.onerror = null;
+                  e.currentTarget.src = `${assetBase}rekova-logo.png`;
+                }}
+              />
             )}
             <div className="equipment-info">
               <div className="equipment-section">
