@@ -13,7 +13,7 @@ export const tutorialVideos: TutorialVideo[] = [
     title: 'Theragun Prime Plus Guide',
     description: 'Learn how to use the Theragun Prime Plus for muscle recovery and tension relief.',
     url: 'https://drive.google.com/file/d/1iRnXX4CewBxmg8MQTjkjHy08_LdxlY2L/view?usp=share_link',
-    thumbnail: 'https://www.therabody.com/cdn/shop/files/Theragun_prime_plus-1.png?v=1742150320',
+    thumbnail: '/guides/theragun-prime-plus.png',
   },
   {
     id: 'glo-led-mask',
@@ -27,7 +27,7 @@ export const tutorialVideos: TutorialVideo[] = [
     title: 'Depuffing Wand Guide',
     description: 'Discover how to use the Depuffing Wand for facial recovery and depuffing therapy.',
     url: 'https://drive.google.com/file/d/1xHlVgRRlfebIGEkK5WkU2p3Tk8ptP9Kw/view?usp=share_link',
-    thumbnail: 'https://www.therabody.com/cdn/shop/files/Wand-PDP-Hero-5-New.webp?v=1772817596',
+    thumbnail: '/guides/depuffing-wand.webp',
   },
   {
     id: 'jetboots-prime',

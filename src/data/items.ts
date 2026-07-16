@@ -46,7 +46,7 @@ export const recoveryItems: RecoveryItem[] = [
       'Improves blood flow',
       'Speeds recovery and reduces soreness',
     ],
-    imageUrl: 'https://www.therabody.com/cdn/shop/files/Theragun_prime_plus-1.png?v=1742150320',
+    imageUrl: '/guides/theragun-prime-plus.png',
     videoUrl: 'https://drive.google.com/file/d/1iRnXX4CewBxmg8MQTjkjHy08_LdxlY2L/view?usp=share_link',
   },
   {
@@ -102,7 +102,7 @@ export const recoveryItems: RecoveryItem[] = [
       'Supports facial circulation',
       'Refreshes tired skin after travel',
     ],
-    imageUrl: 'https://www.therabody.com/cdn/shop/files/Wand-PDP-Hero-5-New.webp?v=1772817596',
+    imageUrl: '/guides/depuffing-wand.webp',
     videoUrl: 'https://drive.google.com/file/d/1xHlVgRRlfebIGEkK5WkU2p3Tk8ptP9Kw/view?usp=share_link',
   },
   {
