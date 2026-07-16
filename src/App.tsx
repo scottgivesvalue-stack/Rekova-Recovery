@@ -118,13 +118,13 @@ function App() {
                   </div>
                   <div className="partners-grid">
                     <div className="partner-card partner-therabody">
-                      <img src="/partners/therabody.svg" alt="Therabody" />
+                      <img src="./partners/therabody.svg" alt="Therabody" />
                     </div>
                     <div className="partner-card partner-hyperice">
-                      <img src="/partners/hyperice.svg" alt="Hyperice" />
+                      <img src="./partners/hyperice.svg" alt="Hyperice" />
                     </div>
                     <div className="partner-card partner-clearlight">
-                      <img src="/partners/clearlight.svg" alt="Clearlight" />
+                      <img src="./partners/clearlight.svg" alt="Clearlight" />
                     </div>
                   </div>
                 </div>
@@ -523,7 +523,7 @@ function App() {
       <div className="auth-shell">
         <div className="auth-card">
           <div className="auth-brand">
-            <img src="/rekova-logo.png" alt="Rekova logo" />
+            <img src="./rekova-logo.png" alt="Rekova logo" />
             <div>
               <p>Rekova Academy</p>
               <span>Recovery onboarding</span>
@@ -587,7 +587,7 @@ function App() {
     <div className="mobile-app-layout">
       <div className="mobile-app-header">
         <div className="brand-inline">
-          <img src="/rekova-logo.png" alt="Rekova logo" />
+          <img src="./rekova-logo.png" alt="Rekova logo" />
           <div>
             <p>Rekova Academy</p>
           </div>
