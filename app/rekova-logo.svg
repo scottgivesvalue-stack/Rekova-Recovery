@@ -1,0 +1,15 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 240 240">
+  <defs>
+    <linearGradient id="red-gradient" x1="0" x2="1" y1="0" y2="1">
+      <stop offset="0%" stop-color="#ff0000" />
+      <stop offset="100%" stop-color="#d50000" />
+    </linearGradient>
+  </defs>
+  <rect width="240" height="240" rx="30" fill="none" />
+  <g transform="translate(30 30)">
+    <path d="M68 0H22L0 24h34l8-12h26c15 0 28 12 28 26s-13 26-28 26H24l-18 28H72c24 0 44-18 44-40S92 0 68 0Z" fill="#fff" />
+    <path d="M20 70 0 50 20 30" fill="url(#red-gradient)" />
+    <path d="M40 70 20 50 40 30" fill="url(#red-gradient)" />
+    <text x="0" y="118" fill="#fff" font-family="Inter, Arial, sans-serif" font-size="28" font-weight="700">REKOVA</text>
+  </g>
+</svg>
