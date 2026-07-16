@@ -46,7 +46,7 @@ export const recoveryItems: RecoveryItem[] = [
       'Improves blood flow',
       'Speeds recovery and reduces soreness',
     ],
-    imageUrl: 'https://www.rekovarecovery.com/percussion-kit.jpg',
+    imageUrl: 'https://www.therabody.com/cdn/shop/files/Theragun_prime_plus-1.png?v=1742150320',
     videoUrl: 'https://drive.google.com/file/d/1iRnXX4CewBxmg8MQTjkjHy08_LdxlY2L/view?usp=share_link',
   },
   {
