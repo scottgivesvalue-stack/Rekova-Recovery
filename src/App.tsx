@@ -20,7 +20,7 @@ function App() {
   const [currentUser, setCurrentUser] = useState<GuestInfo | null>(null);
   const [playingVideo, setPlayingVideo] = useState<string | null>(null);
   const [registeredGuests, setRegisteredGuests] = useState<GuestInfo[]>([]);
-  const [activeScreen, setActiveScreen] = useState<'home' | 'guides' | 'kit' | 'about' | 'signups' | 'profile'>('home');
+  const [activeScreen, setActiveScreen] = useState<'home' | 'academy' | 'guides' | 'kit' | 'about' | 'signups' | 'profile'>('home');
 
   useEffect(() => {
     const storedCurrent = localStorage.getItem('rekovaGuestInfo');
@@ -98,6 +98,7 @@ function App() {
   const renderScreen = () => {
     switch (activeScreen) {
       case 'home':
+      case 'academy':
         return (
           <>
             <div className="screen-grid">
@@ -512,6 +513,7 @@ function App() {
 
   const screenLabel = {
     home: 'Home',
+    academy: 'Academy',
     guides: 'Guides',
     kit: 'Kit',
     signups: 'Signups',
@@ -607,6 +609,13 @@ function App() {
               onClick={() => setActiveScreen('home')}
             >
               Home
+            </button>
+            <button
+              type="button"
+              className={`tab-button ${activeScreen === 'academy' ? 'active' : ''}`}
+              onClick={() => setActiveScreen('academy')}
+            >
+              Academy
             </button>
             <button
               type="button"
